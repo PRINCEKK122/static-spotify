@@ -22,14 +22,17 @@
     <main>
         <section class="sidebar">
             <!-- Top sidebar -->
-            <aside class="top-sidebar">
+            <aside class="top-sidebar mb">
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <i class="fa-solid fa-house"></i>
+                        <li>
+                            <a href="#">
+                            Home</a></li>
                         <li>
                             <form method="GET">
                                 <i class="fa-solid fa-magnifying-glass"></i>
-                                <input type="text" name="search" id="search" placeholder="" Search>
+                                <input type="text" name="search" id="search" placeholder="Search" >
                             </form>
                         </li>
                     </ul>
@@ -38,7 +41,28 @@
 
             <!-- Bottom sidebar -->
             <aside class="bottom-sidebar">
+                <!-- Library -->
+                <div class="library-container">
+                    <div class="library">
+                        <i class="fa-solid fa-book-open"></i>
+                        Your Library
+                    </div>
 
+                    <div class="create-playlist">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Library Badges -->
+                <div class="badge-lists">
+                    <span class="badge-item">Playlists</span><span class="badge-item">Artists</span><span class="badge-item">Albums</span>
+                </div>
+
+                <!-- Search section -->
+                <div class="search-playlist"> 
+                    
+                </div>
             </aside>
         </section>
 
