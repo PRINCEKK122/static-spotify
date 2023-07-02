@@ -209,12 +209,18 @@ li i {
     border-radius: 7px;
     background: rgb(192, 59, 52);
     background: linear-gradient(180deg,
-            rgba(192, 59, 52, 1) 1%,
-            rgba(18, 18, 18, 1) 38%);
+            rgb(223, 71, 63) 1%,
+            rgba(18, 18, 18, 1) 28%);
 }
 
 .main-content header {
     padding: 2rem;
+}
+
+.main-music-container h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin: 2rem 0;
 }
 
 .btn {
@@ -222,6 +228,10 @@ li i {
     color: #fff;
     border: none;
     padding: 1rem 1.5rem;
+}
+
+.btn-success {
+    background-color: #1fd761;
 }
 
 .button-container {
@@ -286,6 +296,57 @@ li i {
     position: relative;
     bottom: 2px;
 }
+
+.wrapper-card {
+    width: 32%;
+    display: inline-block;
+    background-color: rgba(220, 120, 115, 0.268);
+    padding-bottom: 0;
+    border-radius: 5px;
+    margin-right: 1.5rem;
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+    height: 7.5rem;
+    position: relative;
+    transition: background-color 100ms;
+}
+
+.wrapper-card:hover {
+    cursor: pointer;
+    background-color: rgba(174, 106, 102, 0.268);
+}
+
+.wrapper-card img {
+    width: 7.5rem;
+    height: auto;
+}
+
+.wrapper-card span {
+    margin-left: 1.6rem;
+    color: #fff;
+    position: relative;
+    bottom: 30px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.wrapper button {
+    color: #222;
+    font-size: 1.8rem;
+    padding: 1rem 1.5rem;
+    border-radius: 100%;
+}
+
+.card-contents {
+    float: left;
+}
+
+.wrapper-card button {
+    position: absolute;
+    right: 1.4rem;
+    top: 2rem;
+}
+
 
 /*********************************
 ***** Controls
