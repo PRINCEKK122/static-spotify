@@ -55,8 +55,6 @@ a {
 
 /* Main content section */
 .main-content {
-    /* display: inline-block; */
-    /* min-width: 46rem; */
     height: 92vh;
     background-color: blue;
     overflow: hidden;
@@ -64,6 +62,9 @@ a {
     width: calc(100% - 45rem);
 }
 
+/*********************************
+***** Controls
+*********************************/
 /* Music Controls Section */
 .music-controls {
     z-index: 1;
@@ -75,7 +76,8 @@ a {
 }
 
 /* Left controls section */
-.left-controls {
+.left-controls,
+.middle-controls {
     display: inline-block;
 }
 
@@ -123,5 +125,59 @@ div[class*="song"] {
 
 .song-like-section:hover {
     color: #fff;
+}
+
+/* Middle Controls */
+.middle-controls {
+    width: 40%;
+    margin-left: 30rem;
+    text-align: center;
+}
+
+.playback-controls {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.playback-controls i[class^="fa"] {
+    margin-right: 2rem;
+}
+
+.playback-controls i[class^="fa"]:hover {
+    color: #fff;
+}
+
+.fa-circle-pause {
+    transition-property: transform;
+    transition-duration: 100ms;
+    transition-delay: 5ms;
+}
+
+.fa-circle-pause:hover {
+    transform: scale(1.1);
+}
+
+.timer-controls span {
+    position: relative;
+    bottom: 6px;
+}
+
+input.slider {
+    width: 50rem;
+    height: .4rem;
+    position: relative;
+    bottom: 7px;
+}
+
+input.slider:hover {
+    --webkit-appearance: none;
+}
+
+.start-time {
+    right: 10px;
+}
+
+.end-time {
+    left: 10px;
 }
 
