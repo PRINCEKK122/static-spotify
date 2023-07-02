@@ -42,7 +42,10 @@ li i {
 }
 
 .navbar li:hover,
-.search-playlist *:hover {
+.search-playlist  i:hover,
+.search-playlist .dropdown-lists:hover,
+.library-container .library:hover,
+.create-playlist i:hover {
     color: #fff;
     cursor: pointer;
 }
@@ -88,11 +91,6 @@ li i {
     float: left;
 }
 
-.library-container .library:hover {
-    color: #fff;
-    cursor: pointer;
-}
-
 .library i {
     margin-right: 1rem;
 }
@@ -107,11 +105,6 @@ li i {
 
 .create-playlist :first-child {
     margin-right: 2rem;
-}
-
-.create-playlist i:hover {
-    color: #fff;
-    cursor: pointer;
 }
 
 .badge-item {
@@ -157,14 +150,63 @@ li i {
     font-size: 1.4rem;
 }
 
+/************************
+**** Card section
+************************/
+.cards-container {
+    margin-top: 7rem;
+    clear: both;
+    height: 67vh;
+    overflow-y: scroll;
+}
+
+.card {
+    height: 6rem;
+    padding: .5rem 0;
+    line-height: 1.7;
+    margin-bottom: .5rem;
+}
+
+.card:hover {
+    background-color: #1a1a1a;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.card img {
+    width: 5rem;
+    float: left;
+    margin-right: 1rem;
+    border-radius: 5px;
+}
+
+.card h2 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.6rem;
+}
+
+.card p {
+    font-size: 1.2rem;
+}
+
+.card .period {
+    font-size: 3px;
+    position: relative;
+    left: 10.7%;
+    top: 10px;
+    margin: 0 .4rem;
+}
+
 /* Main content section */
 .main-content {
-    height: 92vh;
-    background-color: blue;
+    height: 91vh;
+    background-color: #121212;
     overflow: hidden;
     overflow-y: visible;
-    width: calc(100% - 45rem);
+    width: calc(100% - 47rem);
     float: right;
+    margin: 1rem;
+    border-radius: 7px;
 }
 
 /*********************************
