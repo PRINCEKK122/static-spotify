@@ -120,8 +120,9 @@ div[class*="song"] {
 }
 
 .song-like-section {
-    transform: translateY(50%);
-    font-size: 2rem;
+    transform: translateY(60%);
+    font-size: 1.7rem;
+    line-height: 1.4;
 }
 
 .song-like-section:hover {
@@ -200,4 +201,6 @@ input.right-control-slider {
 .right-controls .right-control-slider {
     margin-right: 1rem;
 }
-
+.right-controls *:hover {
+    color: #fff;
+}
