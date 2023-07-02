@@ -77,7 +77,8 @@ a {
 
 /* Left controls section */
 .left-controls,
-.middle-controls {
+.middle-controls,
+.right-controls {
     display: inline-block;
 }
 
@@ -179,5 +180,24 @@ input.slider:hover {
 
 .end-time {
     left: 10px;
+}
+
+.right-controls {
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+}
+
+input.right-control-slider {
+    width: 12rem;
+    position: relative;
+    top: -0.2rem;
+}
+
+.right-controls i[class^="fa"]:not(i:last-child),
+.right-controls .right-control-slider {
+    margin-right: 1rem;
 }
 
