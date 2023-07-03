@@ -72,6 +72,10 @@ li i {
     margin-top: 2rem;
 }
 
+.mr {
+    margin-right: 2rem;
+}
+
 .top-sidebar,
 .bottom-sidebar {
     background-color: #131312;
@@ -407,7 +411,6 @@ header.sub-section > a {
     width: 100%;
 }
 
-
 .card-container .card h3 {
     font-size: 1.6rem;
     color: #fff;
@@ -416,6 +419,76 @@ header.sub-section > a {
 
 .card-container .card p {
     font-size: 1.4rem;
+}
+
+/*********************************
+******** Footer
+*********************************/
+.main-content-footer {
+    margin: 10rem 2rem 4rem;
+    position: relative;
+}
+
+.main-footer-container .contact-us {
+    position: relative;
+    width: 65%;
+}
+
+.main-footer-container .contact-us  > * {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 8rem;
+    font-size: 1.5rem;
+}
+
+.contact-us h3 {
+    font-weight: 700;
+    color: #fff;
+}
+
+.contact-us li {
+    margin: 1.2rem 0;
+}
+
+.contact-us li:hover {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main-footer-container .social-media-handles {
+    position: absolute;
+    width: 40%;
+    top: 0;
+    right: 0;
+    text-align: right;
+    font-size: 1.4rem;
+}
+
+.social-media-handles i {
+    background-color: #282928;
+    padding: 1.1rem 1.2rem;
+    border-radius: 100%;
+    color: #fff;
+    transition: background-color 100ms;
+}
+
+.social-media-handles i:hover {
+    background-color: #727272;
+}
+
+.main-footer-container p {
+    border-top: 1px solid #4c4c4f;
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 1.4rem;
+    transition: color 100ms;
+    padding-top: 1.2rem;
+    cursor: pointer;
+}
+
+.main-footer-container p:hover {
+    color: #fff;
 }
 
 /*********************************
