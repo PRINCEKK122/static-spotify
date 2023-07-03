@@ -210,7 +210,7 @@ li i {
     background: rgb(192, 59, 52);
     background: linear-gradient(180deg,
             rgb(223, 71, 63) 1%,
-            rgba(18, 18, 18, 1) 28%);
+            rgb(19, 18, 19) 28%);
 }
 
 .main-content header {
@@ -221,6 +221,7 @@ li i {
     font-size: 3rem;
     color: #fff;
     margin: 2rem 0;
+    margin-top: 0;
 }
 
 .btn {
@@ -270,7 +271,7 @@ li i {
 }
 
 .profile-section img {
-    transition: transform 100ms 5ms;
+    transition: transform 100ms linear 5ms;
 }
 
 .profile-section img:hover {
@@ -303,12 +304,15 @@ li i {
     background-color: rgba(220, 120, 115, 0.268);
     padding-bottom: 0;
     border-radius: 5px;
-    margin-right: 1.5rem;
     margin-bottom: 2rem;
     padding-right: 2rem;
     height: 7.5rem;
     position: relative;
     transition: background-color 100ms;
+}
+
+.wrapper-card:not(.wrapper-card:nth-child(3n)) {
+    margin-right: 2.8rem;
 }
 
 .wrapper-card:hover {
@@ -347,6 +351,69 @@ li i {
     top: 2rem;
 }
 
+section header.sub-section {
+    padding-top: 0;
+}
+
+header.sub-section h3 {
+    font-size: 2.5rem;
+    padding-top: 0;
+    color: #fff;
+    float: left;
+}
+
+.sub-section a {
+    text-decoration: none;
+}
+
+.sub-section a:hover,
+header.sub-section > a:hover {
+    text-decoration: underline;
+}
+
+header.sub-section > a {
+    font-weight: 700;
+    float: right;
+    font-size: 1.4rem;
+    position: relative;
+    top: 12px;
+}
+
+.sub-section ~ .card-container {
+    padding: 0 2rem;
+}
+
+.card-container .card {
+    width: 18em;
+    padding: 1.2rem;
+    background-color: #191918;
+    height: auto;
+    border-radius: 7px;
+    margin-right: 2rem;
+    display: inline-block;
+    transition: background-color 100ms;
+}
+
+.card-container .card:hover {
+    background-color: #292829;
+}
+
+.card-container .card img {
+    /* display: block; */
+    float: none;
+    width: 100%;
+}
+
+
+.card-container .card h3 {
+    font-size: 1.6rem;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.card-container .card p {
+    font-size: 1.4rem;
+}
 
 /*********************************
 ***** Controls
