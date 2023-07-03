@@ -68,6 +68,10 @@ li i {
     margin-bottom: 1rem;
 }
 
+.mt {
+    margin-top: 2rem;
+}
+
 .top-sidebar,
 .bottom-sidebar {
     background-color: #131312;
@@ -399,7 +403,6 @@ header.sub-section > a {
 }
 
 .card-container .card img {
-    /* display: block; */
     float: none;
     width: 100%;
 }
